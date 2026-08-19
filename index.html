@@ -1,287 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Al Barakah HVAC Ducting Works</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f2fbff;
-      color: #123;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #55c7f2, #087fb5);
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
-
-    .logo {
-      width: 110px;
-      height: 110px;
-      background: white;
-      border-radius: 50%;
-      margin: 0 auto 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #087fb5;
-      font-size: 15px;
-      font-weight: bold;
-      border: 5px solid #dff7ff;
-    }
-
-    header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-    }
-
-    nav {
-      background: #075f88;
-      padding: 12px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 45px 20px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #087fb5;
-      margin-bottom: 25px;
-      font-size: 28px;
-    }
-
-    .about {
-      background: white;
-      border-radius: 15px;
-      padding: 25px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      border-top: 5px solid #55c7f2;
-    }
-
-    .card h3 {
-      color: #087fb5;
-      margin-bottom: 10px;
-    }
-
-    .video-box {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    video {
-      width: 100%;
-      max-width: 850px;
-      border-radius: 12px;
-      background: #000;
-    }
-
-    .contact {
-      background: linear-gradient(135deg, #55c7f2, #087fb5);
-      color: white;
-      border-radius: 20px;
-      text-align: center;
-      padding: 35px 20px;
-    }
-
-    .contact h2 {
-      color: white;
-    }
-
-    .contact a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #064b6b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-
-    .highlight {
-      color: #087fb5;
-      font-weight: bold;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Barakah HVAC Ducting Works</title>
+<meta name="description" content="Al Barakah HVAC Ducting Works - HVAC ducting fabrication, GI and aluminum ducting, installation, kitchen exhaust, ventilation and AMC in Hyderabad.">
+<style>
+:root{
+  --sky:#0ea5e9; --sky2:#38bdf8; --dark:#082f49; --ink:#0f172a;
+  --light:#f0f9ff; --white:#fff; --muted:#475569;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--light);line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #bae6fd}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
+.logo{height:62px;width:auto;object-fit:contain}
+nav a{color:var(--dark);text-decoration:none;font-weight:700;margin-left:18px}
+nav a:hover{color:var(--sky)}
+.hero{background:linear-gradient(135deg,#e0f2fe,#fff 55%,#bae6fd);padding:65px 18px}
+.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#e0f2fe;color:#0369a1;padding:7px 13px;border-radius:999px;font-weight:700}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.05;margin:15px 0;color:var(--dark)}
+.hero p{font-size:19px;color:var(--muted);max-width:650px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:800}
+.primary{background:var(--sky);color:#fff}
+.secondary{border:2px solid var(--sky);color:#0369a1;background:#fff}
+.hero-card{background:#fff;border-radius:24px;padding:20px;box-shadow:0 18px 50px rgba(2,132,199,.16);border:1px solid #bae6fd}
+.hero-card img{width:100%;display:block;border-radius:16px}
+section{max-width:1150px;margin:auto;padding:65px 18px}
+.section-title{text-align:center;color:var(--dark);font-size:34px;margin:0 0 10px}
+.section-sub{text-align:center;color:var(--muted);margin:0 auto 32px;max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #bae6fd;border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+.card h3{color:#0369a1;margin-top:0}
+.card p{color:var(--muted)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.video-card{background:#fff;border:1px solid #bae6fd;border-radius:18px;padding:12px;overflow:hidden}
+video{width:100%;border-radius:12px;background:#000;display:block}
+.video-card h3{margin:12px 5px 5px;color:var(--dark)}
+.contact{background:var(--dark);color:#fff;max-width:none}
+.contact-inner{max-width:1150px;margin:auto;padding:65px 18px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-box{background:rgba(255,255,255,.08);padding:25px;border-radius:18px;border:1px solid rgba(255,255,255,.15)}
+.contact a{color:#7dd3fc;text-decoration:none;font-weight:700}
+footer{text-align:center;background:#031d2d;color:#bae6fd;padding:22px}
+@media(max-width:800px){
+  .hero-inner,.contact-grid{grid-template-columns:1fr}
+  .grid,.videos{grid-template-columns:1fr}
+  nav{display:none}
+  .logo{height:54px}
+}
+</style>
 </head>
-
 <body>
+<header>
+  <div class="nav">
+    <a href="#home"><img class="logo" src="logo.jpg" alt="Al Barakah HVAC Ducting Works logo"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <header>
-    <div class="logo">
-      YOUR LOGO
-    </div>
-
-    <h1>Al Barakah HVAC Ducting Works</h1>
-
-    <p>Professional HVAC Ducting Fabrication & Installation</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#videos">Videos</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Us</h2>
-
-    <div class="about">
-      <p>
-        <span class="highlight">Al Barakah HVAC Ducting Works</span>
-        provides professional HVAC ducting fabrication and installation
-        services.
-      </p>
-
-      <p>
-        We specialize in Aluminum and GI ducting fabrication and installation,
-        flat oval ducting installation and all types of supply ducting works.
-      </p>
-
-      <br>
-
-      <p>
-        <strong>Professional Work • Quality Service • Reliable Installation</strong>
-      </p>
-    </div>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-
-    <div class="services">
-
-      <div class="card">
-        <h3>GI Ducting</h3>
-        <p>Professional GI duct fabrication and installation.</p>
+<main id="home">
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="badge">Professional HVAC Ducting Works • Hyderabad</span>
+      <h1>AL BARAKAH<br>HVAC DUCTING WORKS</h1>
+      <p>Professional HVAC ducting fabrication and installation in GI and aluminum, with ventilation, kitchen exhaust and maintenance services.</p>
+      <div class="buttons">
+        <a class="btn primary" href="tel:+917671839204">Call Muhammad Sameer</a>
+        <a class="btn secondary" href="https://wa.me/917671839204" target="_blank">WhatsApp</a>
       </div>
-
-      <div class="card">
-        <h3>Aluminum Ducting</h3>
-        <p>Quality aluminum ducting fabrication and installation.</p>
-      </div>
-
-      <div class="card">
-        <h3>Flat Oval Ducting</h3>
-        <p>Flat oval ducting installation for different HVAC requirements.</p>
-      </div>
-
-      <div class="card">
-        <h3>Supply Ducting</h3>
-        <p>All types of supply ducting works and installation.</p>
-      </div>
-
     </div>
-  </section>
+    <div class="hero-card"><img src="logo.jpg" alt="Al Barakah company logo"></div>
+  </div>
+</section>
 
-  <section id="videos">
-    <h2>Our Work Videos</h2>
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-sub">Reliable ducting and ventilation solutions for commercial and residential projects.</p>
+  <div class="grid">
+    <div class="card"><h3>HVAC Ducting Fabrication</h3><p>Professional fabrication for efficient air distribution systems.</p></div>
+    <div class="card"><h3>GI Ducting Works</h3><p>GI duct fabrication and installation with quality workmanship.</p></div>
+    <div class="card"><h3>Aluminum Ducting</h3><p>Aluminum ducting solutions for suitable HVAC applications.</p></div>
+    <div class="card"><h3>Duct Installation</h3><p>Complete duct installation and site execution.</p></div>
+    <div class="card"><h3>Kitchen Exhaust</h3><p>Kitchen exhaust ducting and ventilation systems.</p></div>
+    <div class="card"><h3>Fresh Air & Ventilation</h3><p>Fresh-air and ventilation ducting systems.</p></div>
+    <div class="card"><h3>Maintenance & AMC</h3><p>Maintenance support for HVAC ducting systems.</p></div>
+    <div class="card"><h3>Flat Oval Ducting</h3><p>Flat oval ducting installation and related supply ducting works.</p></div>
+  </div>
+</section>
 
-    <div class="video-box">
-      <p><strong>HVAC Ducting Work</strong></p>
-      <br>
+<section id="videos">
+  <h2 class="section-title">Our Work Videos</h2>
+  <p class="section-sub">A selection of HVAC ducting work videos.</p>
+  <div class="videos">
+    <div class="video-card"><video controls preload="metadata" src="videos/video-1.mp4"></video><h3>HVAC Ducting Work</h3></div>
+    <div class="video-card"><video controls preload="metadata" src="videos/video-2.mp4"></video><h3>Ducting Work</h3></div>
+    <div class="video-card"><video controls preload="metadata" src="videos/video-3.mp4"></video><h3>Site Work</h3></div>
+    <div class="video-card"><video controls preload="metadata" src="videos/video-4.mp4"></video><h3>HVAC Installation</h3></div>
+    <div class="video-card"><video controls preload="metadata" src="videos/video-5.mp4"></video><h3>Ducting Project</h3></div>
+    <div class="video-card"><video controls preload="metadata" src="videos/video-6.mp4"></video><h3>HVAC Work</h3></div>
+    <div class="video-card"><video controls preload="metadata" src="videos/video-7.mp4"></video><h3>Project Video</h3></div>
+  </div>
+</section>
 
-      <!-- Video will be added here after uploading the video file -->
-      <p>Our work videos will appear here.</p>
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <h2 class="section-title" style="color:#fff">Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>Muhammad Sameer</h3>
+        <p>📞 <a href="tel:+917671839204">+91 76718 39204</a></p>
+        <p>✉️ <a href="mailto:mohdsameerammu@gmail.com">mohdsameerammu@gmail.com</a></p>
+      </div>
+      <div class="contact-box">
+        <h3>Amair Muhammad</h3>
+        <p>📞 <a href="tel:+917794094484">+91 77940 94484</a></p>
+        <p>📍 Hashmatpet, Old Bowenpally, Hyderabad</p>
+      </div>
     </div>
+  </div>
+</section>
+</main>
 
-  </section>
-
-  <section id="contact">
-
-    <div class="contact">
-
-      <h2>Contact Us</h2>
-
-      <p><strong>Al Barakah HVAC Ducting Works</strong></p>
-
-      <br>
-
-      <p>
-        <strong>Muhammad Sameer</strong>
-      </p>
-
-      <p>
-        📞 <a href="tel:+917671839204">+91 76718 39204</a>
-      </p>
-
-      <br>
-
-      <p>
-        <strong>Amair Muhammad</strong>
-      </p>
-
-      <p>
-        📞 <a href="tel:+917794094484">+91 77940 94484</a>
-      </p>
-
-      <br>
-
-      <p>
-        📍 Hashmatpet, Old Bowenpally, Hyderabad
-      </p>
-
-    </div>
-
-  </section>
-
-  <footer>
-    <p>© 2026 Al Barakah HVAC Ducting Works</p>
-    <p>Professional HVAC Ducting Services</p>
-  </footer>
-
+<footer>© 2026 Al Barakah HVAC Ducting Works • Quality Ducting • Better Air • Better Life.</footer>
 </body>
 </html>
